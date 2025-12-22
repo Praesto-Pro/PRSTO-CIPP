@@ -582,7 +582,7 @@
     "type": "Confluence",
     "cat": "Documentation",
     "logo": "/assets/integrations/confluence.png",
-    "logoDark": "/assets/integrations/confluence_dark.png",
+    "logoDark": "/assets/integrations/confluence.png",
     "forceSyncButton": true,
     "description": "Enable the Confluence integration to sync documentation to Atlassian Confluence Cloud.",
     "helpText": "This integration allows you to sync M365 tenant inventory (users, devices, licenses, MFA status, Teams, SharePoint) to Confluence Cloud pages for comprehensive documentation and reporting.",
