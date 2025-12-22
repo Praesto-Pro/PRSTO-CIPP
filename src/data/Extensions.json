@@ -577,6 +577,71 @@
     "showSyncButton": true
   },
   {
+    "name": "Confluence",
+    "id": "Confluence",
+    "type": "Confluence",
+    "cat": "Documentation",
+    "logo": "/assets/integrations/confluence.png",
+    "logoDark": "/assets/integrations/confluence_dark.png",
+    "forceSyncButton": true,
+    "description": "Enable the Confluence integration to sync documentation to Atlassian Confluence Cloud.",
+    "helpText": "This integration allows you to sync M365 tenant inventory (users, devices, licenses, MFA status, Teams, SharePoint) to Confluence Cloud pages for comprehensive documentation and reporting.",
+    "links": [
+      {
+        "name": "Atlassian Confluence Cloud",
+        "url": "https://www.atlassian.com/software/confluence"
+      }
+    ],
+    "SettingOptions": [
+      {
+        "type": "switch",
+        "name": "Confluence.Enabled",
+        "label": "Enable Integration"
+      },
+      {
+        "type": "textField",
+        "name": "Confluence.BaseURL",
+        "label": "Confluence Base URL",
+        "placeholder": "https://your-domain.atlassian.net/wiki",
+        "required": true,
+        "condition": {
+          "field": "Confluence.Enabled",
+          "compareType": "is",
+          "compareValue": true,
+          "action": "disable"
+        }
+      },
+      {
+        "type": "textField",
+        "name": "Confluence.UserEmail",
+        "label": "Confluence User Email",
+        "placeholder": "your-email@domain.com",
+        "required": true,
+        "condition": {
+          "field": "Confluence.Enabled",
+          "compareType": "is",
+          "compareValue": true,
+          "action": "disable"
+        }
+      },
+      {
+        "type": "password",
+        "name": "Confluence.APIKey",
+        "label": "Confluence API Token",
+        "placeholder": "Enter your Confluence API Token",
+        "required": true,
+        "condition": {
+          "field": "Confluence.Enabled",
+          "compareType": "is",
+          "compareValue": true,
+          "action": "disable"
+        }
+      }
+    ],
+    "mappingRequired": true,
+    "showSyncButton": true
+  },
+  {
     "name": "Hudu",
     "id": "Hudu",
     "type": "Hudu",
