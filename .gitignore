@@ -21,6 +21,7 @@ out
 .env.development.local
 .env.test.local
 .env.production.local
+CONFLUENCE-LOGO-INSTRUCTIONS.md
 
 npm-debug.log*
 yarn-debug.log*
@@ -33,4 +34,10 @@ app.log
 # AI rules
 .*/rules
 AGENTS.md
-CONFLUENCE-LOGO-INSTRUCTIONS.md
+
+# jetbrains
+.idea
+
+# azurite
+__*
+AzuriteConfig
